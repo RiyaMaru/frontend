@@ -1,0 +1,118 @@
+.layout-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.sidebar {
+  width: 280px;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  color: #94a3b8;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.05);
+  z-index: 50;
+}
+
+.sidebar-header {
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar-header span {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: white;
+  letter-spacing: -0.025em;
+}
+
+.nav-links {
+  flex: 1;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.nav-item.active {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-footer {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.user-name {
+  color: white;
+  font-weight: 700;
+}
+
+.clinic-name {
+  font-size: 0.75rem;
+  margin-top: 0.15rem;
+}
+
+.logout-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fee2e2;
+  color: var(--danger);
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.logout-btn:hover {
+  background: #fef2f2;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  border-radius: 1.5rem;
+}
+
+.content-container {
+  min-height: 100%;
+}
